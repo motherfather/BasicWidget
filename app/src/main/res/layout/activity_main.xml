@@ -11,9 +11,47 @@
     tools:context="com.bit2016.basicwidget.MainActivity">
 
     <TextView
-        android:layout_width="80dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:background="#1700ffff"
+        android:paddingBottom="25dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="25dp"
         android:text="Hello World!"
-        android:id="@+id/textView" />
+        android:textColor="#05ffff"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/button_gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_invisible"
+        android:layout_below="@+id/button_invisible"
+        android:text="Gone" />
+
+    <Button
+        android:id="@+id/button_visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_gone"
+        android:layout_below="@+id/button_gone"
+        android:text="Visible" />
+
+    <Button
+        android:id="@+id/button_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="69dp"
+        android:clickable="false"
+        android:text="Invisible" />
 
 </RelativeLayout>
